@@ -54,7 +54,11 @@ function PDFviewer() {
           title="resume"
           src="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
         /> */}
-        {(
+        {<object
+          type="application/pdf"
+          data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+          aria-label="Resumepdf"
+        /> ? (
           <object
             type="application/pdf"
             id="objecttt"
@@ -62,7 +66,9 @@ function PDFviewer() {
             data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
             aria-label="Resumepdf"
           />
-        ) || <LoadingSpinner />}
+        ) : (
+          <LoadingSpinner />
+        )}
         {/* <Document
           // file="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
