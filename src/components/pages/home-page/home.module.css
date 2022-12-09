@@ -35,20 +35,7 @@
   text-align: left;
   margin-bottom: 2rem;
 }
-.mobileW,
-.mobileTriangle {
-  position: absolute;
-}
-.mobileW {
-  width: 5%;
-  top: 18.5rem;
-  left: 1rem;
-}
-.mobileTriangle {
-  width: 4%;
-  top: 2rem;
-  left: 0.5rem;
-}
+
 .sectionOneMobile a {
   color: black;
   text-decoration: none;
@@ -538,6 +525,20 @@
   .sectionOne {
     display: none;
   }
+  .mobileW,
+  .mobileTriangle {
+    position: absolute;
+  }
+  .mobileW {
+    width: 5%;
+    top: 18.5rem;
+    left: 1rem;
+  }
+  .mobileTriangle {
+    width: 4%;
+    top: 2rem;
+    left: 0.5rem;
+  }
 
   .nameDiv .name {
     font-size: 6vh;
@@ -680,6 +681,11 @@
 
 @media screen and (max-width: 375px) {
   /* SECTION ONE MOBILE */
+  .mobileW {
+    width: 5%;
+    top: 20.5rem;
+    left: 1rem;
+  }
   /* .avatarDivMobile img {
     width: 75%;
   } */
