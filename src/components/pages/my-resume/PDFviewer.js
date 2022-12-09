@@ -6,6 +6,7 @@ import { useState } from "react";
 import { ImArrowLeft, ImArrowRight } from "react-icons/im";
 import "./pdf.css";
 import { useEffect } from "react";
+import LoadingSpinner from "../../helpers/LoadingSpinner";
 
 //import { pdfjs } from 'react-pdf';
 //pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -36,7 +37,14 @@ function PDFviewer() {
     } else {
     }
   }
-
+  function rendered() {
+    setLoaded(true);
+    console.log("page loaded");
+  }
+  const [loaded, setLoaded] = useState(false);
+  window.addEventListener("load", () => {
+    setLoaded(true);
+  });
   return (
     <>
       <div className={resume.pdfBox}>
@@ -46,12 +54,15 @@ function PDFviewer() {
           title="resume"
           src="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
         /> */}
-        <object
-          className={resume.pdfObject}
-          style={{ width: "100%", height: "60vh" }}
-          data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
-          aria-label="Resumepdf"
-        />
+        {(
+          <object
+            type="application/pdf"
+            id="objecttt"
+            className={resume.pdfObject}
+            data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+            aria-label="Resumepdf"
+          />
+        ) || <LoadingSpinner />}
         {/* <Document
           // file="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
