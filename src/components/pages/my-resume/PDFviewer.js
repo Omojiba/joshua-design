@@ -40,12 +40,17 @@ function PDFviewer() {
   return (
     <>
       <div className={resume.pdfBox}>
-        <h1>How to disable downloading of the PDF document</h1>
-        <iframe
+        {/* <iframe
           id="Iframe"
           className={resume.frame}
           title="resume"
-          src="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf#view=fitH"
+          src="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+        /> */}
+        <object
+          className={resume.pdfObject}
+          style={{ width: "100%", height: "60vh" }}
+          data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+          aria-label="Resumepdf"
         />
         {/* <Document
           // file="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
