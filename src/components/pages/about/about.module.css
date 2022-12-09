@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+  color: white;
+  padding: 100px 0;
+}
+
+.first {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 10%;
+  overflow: hidden;
+}
+.first .myImage {
+  width: 100%;
+}
+.secondText {
+  padding: 1rem 10%;
+  overflow: hidden;
+}
+
+.imageText h1 {
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 5px;
+}
+.aboutText {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.imageText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+section {
+  margin-bottom: 5rem;
+}
+
+/* objectives */
+.objectives,
+.interests {
+  padding: 0 10%;
+  overflow: hidden;
+}
+.objectives h2,
+.interests h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.objectives ul,
+.interests ul {
+  width: 87%;
+  margin: auto;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.objectives ul li,
+.interests ul li {
+  margin-bottom: 1rem;
+  width: 97%;
+}
+.objectives ul li::before,
+.interests ul li::before {
+  content: "\2022";
+  color: #ff6b6b;
+  font-weight: bold;
+  font-size: 24px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media screen and (max-width: 1024px) {
+  .first {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .first {
+    padding: 0;
+  }
+  .first .myImage {
+    width: 90%;
+  }
+  .aboutText {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .first {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .imageText {
+    width: 100%;
+    padding: 0 5%;
+    text-align: justify;
+    gap: 0.5rem;
+  }
+  .imageText h1 {
+    margin-bottom: 0.5rem;
+  }
+  .secondText {
+    padding: 1rem 5%;
+    text-align: justify;
+  }
+  .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .main {
+    padding: 70px 0 100px 0;
+  }
+  .objectives,
+  .interests {
+    padding: 0 5%;
+  }
+  .objectives ul,
+  .interests ul {
+    width: 93%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  .objectives ul li,
+  .interests ul li {
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: justify;
+  }
+  .first .handIcon {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .objectives h2,
+  .interests h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .objectives,
+  .interests,
+  .secondText,
+  .imageText {
+    padding: 0 3%;
+  }
+  .aboutText {
+    font-size: 14px;
+  }
+  .imageText h1 {
+    font-size: 35px;
+  }
+  .first .myImage {
+    width: 80%;
+  }
+}

@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: black;
+  transition: all ease 0.3s;
+  margin-bottom: 50px;
+}
+.mainActive {
+  background-color: white;
+  transition: all ease 0.3s;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 13%;
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  top: 0;
+  z-index: 10;
+}
+.headerActive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 13%;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  z-index: 10;
+  top: 0;
+}
+.logoDiv {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logoDiv .logoText {
+  font-size: 26px;
+  color: white;
+}
+.logoDiv .logoTextActive {
+  font-size: 26px;
+  color: black;
+}
+
+/* hamburger */
+.hamburger {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+}
+.hamburgerActive {
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+}
+.hamburger li {
+  list-style: none;
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all ease 0.3s;
+  width: 45px;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+  transition: all ease 0.3s;
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+  transition: all ease 0.3s;
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  /* stroke:white; */
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  transition: all ease 0.3s;
+}
+#linecolor {
+  stroke: black;
+  transition: all ease 0.3s;
+}
+#lineColorActive {
+  stroke: white;
+  transition: all ease 0.3s;
+}
+.ham1 .top {
+  stroke-dasharray: 25 139;
+  stroke-dashoffset: -15;
+  transition: all ease 0.3s;
+}
+.hamIcon {
+  transition: all ease 0.3s;
+}
+.ham1 .bottom {
+  stroke-dasharray: 20 180;
+  stroke-dashoffset: -5;
+  transition: all ease 0.3s;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+  stroke-dasharray: 40 139;
+  transition: all ease 0.3s;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+  transition: all ease 0.3s;
+}
+
+/* NAV */
+.nav .navItems {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  justify-content: space-around;
+  text-align: left;
+  align-items: flex-start;
+}
+.navItems a {
+  text-decoration: none;
+  font-size: 40px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 10rem; */
+  background-color: white;
+  transition: all ease 0.5s;
+  position: relative;
+  height: 100vh;
+}
+.displayNone {
+  transition: all ease 0.5s;
+  display: none;
+}
+.activeLink {
+  color: #090909 !important;
+  font-size: 45px;
+  font-weight: 700;
+}
+.wIcon,
+.crown {
+  position: absolute;
+}
+.wIcon {
+  top: 85%;
+  left: 15%;
+}
+.crown {
+  top: 40%;
+  right: 20%;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1025px) {
+  .header,
+  .headerActive {
+    padding: 20px 10%;
+  }
+  .logoDiv img {
+    width: 20%;
+  }
+  .logoDiv .logoText,
+  .logoDiv .logoTextActive {
+    font-size: 22px;
+  }
+  .hamburger {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+  }
+  .hamburgerActive {
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+  }
+  .ham {
+    width: 40px;
+  }
+  .wIcon img,
+  .crown img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header,
+  .headerActive {
+    padding: 20px 7%;
+  }
+  .navItems a {
+    font-size: 35px;
+  }
+  .activeLink {
+    font-size: 40px;
+  }
+  .wIcon img,
+  .crown img {
+    width: 50%;
+  }
+  /* .crown {
+    top: 52%;
+    right: 10%;
+  }
+  .wIcon {
+    top: 85%;
+    left: 10%;
+  } */
+  .nav .navItems {
+    gap: 34px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header,
+  .headerActive {
+    padding: 15px 5%;
+  }
+  .logoDiv {
+    gap: 7px;
+  }
+  .logoDiv .logoText,
+  .logoDiv .logoTextActive {
+    font-size: 20px;
+  }
+  .hamburger,
+  .hamburgerActive {
+    height: 30px;
+    width: 30px;
+  }
+  .ham {
+    width: 30px;
+  }
+  .navItems a {
+    font-size: 30px;
+  }
+  .activeLink {
+    font-size: 35px;
+  }
+
+  .crown {
+    top: 32%;
+    right: 5%;
+  }
+  .wIcon {
+    top: 75%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navItems a {
+    font-size: 25px;
+  }
+  .activeLink {
+    font-size: 30px;
+  }
+  .nav .navItems {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hamburger,
+  .hamburgerActive {
+    height: 25px;
+    width: 25px;
+  }
+  .ham {
+    width: 25px;
+  }
+  .logoDiv .logoText,
+  .logoDiv .logoTextActive {
+    font-size: 16px;
+  }
+}

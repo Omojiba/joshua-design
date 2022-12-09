@@ -1,0 +1,791 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: black;
+  padding-bottom: 100px;
+  padding-top: 65px;
+  min-height: 100vh;
+}
+
+/* SECTION ONE MOBILE */
+.sectionOneMobile {
+  padding: 0 8%;
+  position: relative;
+  display: none;
+}
+.avatarFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatarDivMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.avatarDivMobile img {
+  width: 80%;
+}
+.textBoxMobile {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.mobileW,
+.mobileTriangle {
+  position: absolute;
+}
+.mobileW {
+  width: 5%;
+  top: 18.5rem;
+  left: 1rem;
+}
+.mobileTriangle {
+  width: 4%;
+  top: 2rem;
+  left: 0.5rem;
+}
+.sectionOneMobile a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 8px 15px;
+  background-color: white;
+}
+
+/* SECTION ONE */
+.sectionOne {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.vectorDiv {
+  padding-right: 30px;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48vh;
+}
+.vectorDiv .homeW {
+  padding-left: 35px;
+}
+.intro {
+  padding-top: 20px;
+  padding-bottom: 1rem;
+}
+.intro h2 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 20px;
+  width: fit-content;
+  background-image: linear-gradient(
+    90deg,
+    #fdd365 0%,
+    #bc8126 53.94%,
+    #ffc324 100%
+  );
+  margin-bottom: 15px;
+}
+.intro .nameDiv {
+  position: relative;
+  padding: 30px 0 40px 0;
+}
+.intro .nameDiv img {
+  position: absolute;
+  right: 60%;
+  bottom: 90%;
+}
+
+.nameDiv .name {
+  font-size: 15vh;
+  font-weight: 700;
+  color: white;
+  line-height: 160px;
+  position: relative;
+}
+.name span {
+  color: #090909;
+  background-color: white;
+  padding: 0px 18px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.textBox {
+  width: 80%;
+  margin-bottom: 35px;
+}
+.introText {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400px;
+}
+.intro a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 40px;
+  padding: 18px 57px;
+  background-color: white;
+}
+
+/* SECTION TWO */
+.sectionTwo {
+  margin: 15vh 0;
+  padding: 0 5% 0 11%;
+  width: 70%;
+  overflow: hidden;
+}
+.sectionTwo h1 {
+  color: white;
+  font-size: 4.5vh;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.maya {
+  font-size: 2vh;
+  font-weight: 400;
+  line-height: 40px;
+}
+.maya span {
+  color: white;
+  font-weight: 700;
+  padding-left: 7px;
+}
+
+/* SECTION THREE */
+.sectionThree {
+  margin: 10rem 0;
+  padding: 0 5% 0 11%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  overflow: hidden;
+}
+.sectionThree img {
+  width: 70px;
+  height: 70px;
+}
+.sectionThree h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin: 1.5rem 0;
+}
+.categoryText {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 35px;
+  width: 100%;
+}
+.categories {
+  width: 100%;
+}
+
+/* SECTION Four */
+.sectionFour {
+  margin: 15vh 0 0 0;
+  padding: 0 5% 0 11%;
+  width: 70%;
+  overflow: hidden;
+}
+.sectionFour h1 {
+  color: white;
+  font-size: 4.5vh;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.steve {
+  font-size: 2vh;
+  font-weight: 400;
+  line-height: 40px;
+}
+.steve span {
+  color: white;
+  font-weight: 700;
+  padding-left: 7px;
+}
+
+/* WORKS SECTION (FIFTH) */
+.works {
+  margin: 4rem 0;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 6vh;
+  overflow: hidden;
+}
+
+.works a {
+  /* margin-bottom: 4rem; */
+  text-decoration: none;
+}
+.works a img {
+  width: 100%;
+}
+
+.works img:hover,
+.allWork:hover {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2),
+    0 0 10px rgba(255, 255, 255, 0.3);
+  outline-offset: 20px;
+  outline-color: rgba(255, 255, 255, 0);
+  border-radius: 40px;
+}
+.works .allWork {
+  color: white;
+  padding: 15px 50px;
+  border: 1px solid white;
+  border-radius: 40px;
+}
+
+/*                   LAST SECTION                 */
+.lastSection {
+  margin: 10rem 0;
+  padding: 0 5% 0 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.lastLeft {
+  width: 95%;
+}
+.lastLeft h1 {
+  font-size: 35px;
+  line-height: 65px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.lastLeft .lastText {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.lastRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+.tooldiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 18px 45px;
+  border: 1px solid #3f3f3fc7;
+  background-color: #090909de;
+  border-radius: 30px;
+}
+.firstTools {
+  display: flex;
+  gap: 20px;
+}
+.lastRight .tools {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1440px) {
+  /* SECTION 1 */
+  .bitmoji {
+    width: 50%;
+    /* border: 1px solid red; */
+  }
+  .intro .nameDiv img {
+    position: absolute;
+    right: 53%;
+    bottom: 90%;
+  }
+
+  /* SECTION 2 */
+  .sectionTwo {
+    margin: 15vh 0;
+    padding: 0 5% 0 11%;
+    width: 75%;
+  }
+  /* SECTION Four */
+  .sectionFour {
+    margin: 15vh 0;
+    padding: 0 5% 0 11%;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bitmoji {
+    width: 35%;
+  }
+  .sectionOne {
+    display: flex;
+    align-items: flex-start;
+  }
+  .vectorDiv {
+    padding-right: 20px;
+    padding-top: 5rem;
+    /* border: 1px solid blue; */
+    width: 15%;
+    gap: 38vh;
+  }
+
+  .vectorDiv .homeW {
+    padding-left: 25px;
+  }
+
+  .triangle img {
+    width: 40%;
+  }
+  .intro {
+    padding-top: 20px;
+  }
+  .intro h2 {
+    margin-bottom: 15px;
+  }
+  .intro .nameDiv {
+    position: relative;
+    padding: 10px 0 20px 0;
+  }
+  .intro .nameDiv img {
+    position: absolute;
+    right: 55%;
+    bottom: 93%;
+    width: 8%;
+  }
+  .nameDiv .name {
+    font-size: 10vh;
+    font-weight: 700;
+    color: white;
+    line-height: 120px;
+  }
+  .name span {
+    color: #090909;
+    background-color: white;
+    padding: 0px 18px;
+    margin-right: 5px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .textBox {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .introText {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 400px;
+  }
+  .intro a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 12px 40px;
+    background-color: white;
+  }
+
+  /* SECTION 2 */
+  .sectionTwo {
+    margin: 15vh 0;
+    padding: 0 5% 0 11%;
+    width: 95%;
+  }
+
+  /* SECTION THREE */
+  .sectionThree {
+    margin: 10rem 0;
+    padding: 0 3% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  /* SECTION Four */
+  .sectionFour {
+    margin: 15vh 0;
+    padding: 0 9%;
+    width: 95%;
+  }
+
+  /* WORKS SECTION (FIFTH) */
+  .works a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .works .allWork {
+    color: white;
+    padding: 8px 35px;
+    border: 1px solid white;
+    border-radius: 30px;
+  }
+
+  /* LAST SECTION (TOOLS) */
+  .lastLeft h1 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vectorDiv .homeW img {
+    width: 6vh;
+    /* border: 1px solid pink; */
+  }
+  .vectorDiv .homeW {
+    padding-left: 15px;
+  }
+  .vectorDiv {
+    width: 13%;
+    padding-right: 5px;
+    gap: 28vh;
+    padding-top: 8vh;
+  }
+  .nameDiv .name {
+    font-size: 7vh;
+    font-weight: 700;
+    color: white;
+    line-height: 100px;
+  }
+
+  .bitmoji {
+    width: 30%;
+  }
+  .introText {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400px;
+  }
+
+  .intro h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .intro .nameDiv img {
+    position: absolute;
+    right: 62%;
+    bottom: 85%;
+    width: 8%;
+  }
+  .intro {
+    padding-top: 0;
+  }
+
+  /* SECTION 2 */
+  .sectionTwo {
+    margin: 15vh 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  /* SECTION THREE */
+  .sectionThree {
+    margin: 10rem 0;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  /* SECTION Four */
+  .sectionFour {
+    margin: 15vh 0 0 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+  /* WORKS SECTION (FIFTH) */
+  .works {
+    margin: 5vh 0;
+  }
+  .works img:hover {
+    border-radius: 0;
+  }
+  /*                   LAST SECTION                 */
+  .lastSection {
+    margin: 10rem 0;
+    padding: 0 5%;
+    display: flex;
+    row-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .lastLeft h1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .sectionOneMobile {
+    display: block;
+  }
+  .sectionOne {
+    display: none;
+  }
+
+  .nameDiv .name {
+    font-size: 6vh;
+    font-weight: 700;
+    color: white;
+    line-height: 75px;
+  }
+  .name span {
+    padding: 0 8px;
+  }
+
+  .introText {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400px;
+  }
+
+  .intro h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .intro .nameDiv img {
+    position: absolute;
+    right: 43%;
+    bottom: 85%;
+    width: 10%;
+  }
+  .intro a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 8px 20px;
+    background-color: white;
+  }
+  .main {
+    padding-top: 40px;
+  }
+  /* SECTION 2 */
+  .sectionTwo {
+    margin: 15vh 0 0 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+  .sectionTwo h1 {
+    font-size: 3.5vh;
+  }
+  .maya {
+    font-size: 1.8vh;
+    line-height: 30px;
+  }
+  /* SECTION THREE */
+  .sectionThree {
+    margin: 5rem 0;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 0 5%; */
+  }
+  .categoryText {
+    line-height: 20px;
+  }
+
+  /* SECTION FOUR */
+  .sectionFour {
+    margin: 15vh 0 0 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+  .sectionFour h1 {
+    font-size: 3.5vh;
+  }
+  .steve {
+    font-size: 1.8vh;
+    line-height: 30px;
+  }
+
+  /* WORKS SECTION (FIFTH) */
+  .works {
+    margin: 3vh 0;
+    row-gap: 3vh;
+  }
+  .works .allWork {
+    color: white;
+    padding: 5px 32px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  /*                   LAST SECTION                 */
+  .lastSection {
+    margin: 10rem 0;
+    padding: 0 5%;
+    display: flex;
+    row-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .lastLeft h1 {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .lastLeft .lastText {
+    line-height: 32px;
+  }
+  .tooldiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 30px;
+    border: 1px solid #3f3f3fc7;
+    background-color: #090909de;
+    border-radius: 25px;
+    font-size: 12px;
+  }
+  .firstTools {
+    display: flex;
+    gap: 15px;
+  }
+  .lastRight .tools {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* SECTION ONE MOBILE */
+  /* .avatarDivMobile img {
+    width: 75%;
+  } */
+  /* .nameDiv .name {
+    font-size: 4vh;
+    font-weight: 700;
+    color: white;
+    line-height: 50px;
+  } */
+  /* .name span {
+    padding: 0 5px;
+  }
+  .mobileW {
+    top: 17rem;
+  } */
+
+  /* SECTION THREE */
+  .sectionThree {
+    padding: 0 5%;
+  }
+  /* LAST SECTION */
+  .lastLeft h1 {
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .lastLeft .lastText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* .nameDiv .name {
+    font-size: 4vh;
+    font-weight: 700;
+
+    color: white;
+    line-height: 50px;
+  }
+  .vectorDiv {
+    width: 10%;
+    padding-right: 5px;
+    gap: 28vh;
+    padding-top: 6vh;
+  } */
+  /* .mobileW {
+    bottom: -2rem;
+  }
+  .mobileTriangle {
+    top: 3rem;
+  }
+  .introText {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400px;
+  }
+  .intro a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 8px 15px;
+    background-color: white;
+  }
+  .intro .nameDiv img {
+    position: absolute;
+    right: 43%;
+    bottom: 85%;
+    width: 12%;
+  } */
+
+  .main {
+    padding-top: 20px;
+  }
+
+  /* SECTION 2 */
+  .sectionTwo h1 {
+    font-size: 3vh;
+  }
+  /* SECTION FOUR */
+  .sectionFour h1 {
+    font-size: 3vh;
+  }
+
+  /* LAST SECTION */
+  .lastLeft h1 {
+    font-size: 25px;
+  }
+  .tooldiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 20px;
+    border: 1px solid #3f3f3fc7;
+    background-color: #090909de;
+    border-radius: 25px;
+    font-size: 12px;
+  }
+  .firstTools {
+    display: flex;
+    gap: 12px;
+  }
+  .lastRight .tools {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

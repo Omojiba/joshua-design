@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+  color: white;
+  padding: 30px 0 100px 0;
+}
+
+.mainContainer {
+  padding: 0 10%;
+}
+.flexContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.topMargin {
+  margin-top: 15%;
+}
+.backLink a {
+  color: white;
+  font-size: 22px;
+}
+.backLink {
+  margin-bottom: 7rem;
+}
+.webApp {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 18px;
+  width: fit-content;
+  background-image: linear-gradient(
+    90deg,
+    #fdd365 0%,
+    #bc8126 53.94%,
+    #ffc324 100%
+  );
+}
+.projectName {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  width: 75%;
+}
+.projectName h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.firstImage {
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstImage img {
+  width: 100%;
+}
+
+.contentBox {
+  margin-bottom: 6rem;
+  overflow: hidden;
+}
+.linkBox {
+  margin-top: 4rem;
+}
+.contentBox .regularText {
+  font-size: 16px;
+  line-height: 35px;
+}
+/* .contentBox .img {
+  width: 100%;
+} */
+.contentBox h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+.flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.flexBox img {
+  width: 100%;
+}
+.mockups {
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+.mockups h2,
+.flexContainer h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.userFlow img {
+  width: 100%;
+}
+.flexContainer img {
+  width: 100%;
+}
+.flexContainer {
+  overflow: hidden;
+}
+
+/* .mockups  img {
+  width: 100%;
+} */
+.contentBox ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: inline;
+  width: 97%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+ul li::before {
+  content: "\2022";
+  color: #007a6c;
+
+  font-weight: bold;
+  font-size: 24px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.bulletBoxGrey ul li::before {
+  content: "\2022";
+  color: #9a9999;
+  font-weight: bold;
+  font-size: 24px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.bulletBox,
+.bulletBoxGrey {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+.userFlow {
+  padding-top: 3rem;
+}
+.colorFlex {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.colorFlex img {
+  width: 50%;
+  margin-top: 0.5rem;
+}
+.linkFlex a {
+  text-decoration: none;
+  color: white;
+}
+.linkFlex .links {
+  font-family: "Axiforma", sans-serif;
+  font-size: 15px;
+  padding: 24px 13px;
+  border-radius: 40px;
+  border: 0.1rem solid white;
+}
+
+.linkFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+/* .contentBox .imgShrink {
+  width: 80%;
+} */
+
+@media screen and (max-width: 1024px) {
+  .projectName {
+    width: 95%;
+  }
+  .contentBox ul {
+    width: 96%;
+  }
+  .mainContainer {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectName {
+    width: 100%;
+  }
+  .projectName h2 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .mainContainer {
+    padding: 0 5%;
+  }
+  .backLink {
+    margin-bottom: 4rem;
+  }
+  .contentBox ul {
+    width: 95%;
+  }
+  .flexBox .links {
+    font-family: "Axiforma", sans-serif;
+    font-size: 15px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: 0.1rem solid white;
+  }
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .webApp {
+    font-size: 17px;
+  }
+  .backLink {
+    margin-bottom: 2rem;
+  }
+  .projectName h2 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .projectName {
+    margin-bottom: 1rem;
+  }
+  .contentBox h1 {
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+  }
+  .contentBox ul {
+    width: 94%;
+    margin-top: 0.2rem;
+  }
+  .userFlow {
+    margin-top: 1rem;
+  }
+  .bulletBoxGrey ul li::before {
+    font-size: 18px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  .contentBox {
+    text-align: justify;
+  }
+  .contentBox .regularText {
+    line-height: 25px;
+  }
+  .firstImage {
+    margin-bottom: 4rem;
+  }
+  .mockups h2,
+  .flexContainer h2 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .contentBox,
+  .mockups {
+    margin-bottom: 4rem;
+  }
+  .linkFlex .links {
+    font-family: "Axiforma", sans-serif;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 0.1rem solid white;
+  }
+  .linkFlex {
+    gap: 1%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contentBox ul {
+    width: 92%;
+  }
+  .contentBox h1 {
+    font-size: 20px;
+  }
+  .mainContainer {
+    padding: 0 5%;
+  }
+
+  .flexContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  .flexBox {
+    margin-top: 0.5rem;
+  }
+  .topMargin {
+    margin-top: 5%;
+  }
+  .contentBox .regularText,
+  .contentBox ul li {
+    font-size: 14px;
+  }
+  .mockups h2,
+  .contentBox h2,
+  .flexContainer h2,
+  .contentBox h1 {
+    margin-bottom: 0.5rem;
+    font-size: 17px;
+  }
+  .linkFlex .links {
+    font-family: "Axiforma", sans-serif;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 0.1rem solid white;
+  }
+  .linkFlex {
+    gap: 1%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contentBox h1 {
+    font-size: 19px;
+  }
+}
