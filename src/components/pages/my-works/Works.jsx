@@ -20,7 +20,7 @@ function Works() {
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
           >
-            My Works
+            My Work
           </Typography>
 
           <div

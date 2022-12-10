@@ -150,7 +150,7 @@ function Header() {
               }
               variant="navLink"
             >
-              My Works
+              My Work
             </Typography>
           </Link>
           <Link to="resume" onClick={() => setMenuOpen(false)}>
