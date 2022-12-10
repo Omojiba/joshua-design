@@ -14,6 +14,7 @@ import LoadingSpinner from "../../helpers/LoadingSpinner";
 function PDFviewer() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [fileurl, setFileurl] = useState("");
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -37,14 +38,29 @@ function PDFviewer() {
     } else {
     }
   }
-  function rendered() {
-    setLoaded(true);
-    console.log("page loaded");
+  function fetchpdf() {
+    try {
+      fetch(
+        "https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+      ).then((response) => {
+        response.blob().then((blob) => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          setFileurl(fileURL);
+
+          // Setting various property values
+        });
+      });
+    } catch (error) {
+      console.log("pdfviewer", error);
+      setFileurl("failed");
+    }
   }
-  const [loaded, setLoaded] = useState(false);
-  window.addEventListener("load", () => {
-    setLoaded(true);
-  });
+
+  useEffect(() => {
+    fetchpdf();
+  }, []);
+
   return (
     <>
       <div className={resume.pdfBox}>
@@ -54,20 +70,26 @@ function PDFviewer() {
           title="resume"
           src="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
         /> */}
-        {<object
-          type="application/pdf"
-          data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
-          aria-label="Resumepdf"
-        /> ? (
+        {fileurl === "" ? (
+          <div className={resume.spinnerContainer}>
+            <LoadingSpinner />
+          </div>
+        ) : fileurl === "failed" ? (
+          <div className={resume.spinnerContainer}>
+            <p>
+              Failed to load
+              <br />
+              Refresh the page or download a copy
+            </p>
+          </div>
+        ) : (
           <object
             type="application/pdf"
-            id="objecttt"
             className={resume.pdfObject}
-            data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+            // data="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
+            data={fileurl}
             aria-label="Resumepdf"
           />
-        ) : (
-          <LoadingSpinner />
         )}
         {/* <Document
           // file="https://res.cloudinary.com/jibz/image/upload/v1670576135/docs/Joshua_Chike_Resume_rf1ypx.pdf"
