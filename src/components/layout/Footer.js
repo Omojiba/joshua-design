@@ -17,7 +17,7 @@ function Footer() {
 
       <div className={footer.footerIcons}>
         <a
-          href="https://www.behance.net/Ikennachikeobi"
+          href="https://dribbble.com/Joshuaikenna9"
           target="_blank"
           rel="noreferrer"
         >
@@ -31,7 +31,7 @@ function Footer() {
           <img src={linkedin} alt="icon" />
         </a>
         <a
-          href="https://dribbble.com/Joshuaikenna9"
+          href="https://www.behance.net/Ikennachikeobi"
           target="_blank"
           rel="noreferrer"
         >
